@@ -1,18 +1,18 @@
-APP_URL = "https://clinical-chatbot.streamlit.app"
+APP_URL = "https://atevaluationchatbot.streamlit.app/"
 APP_IMAGE = "clinical_chatbot.webp"
 PUBLISHED = True
 
-APP_TITLE = "Clinical Chatbot"
+APP_TITLE = "Assistive Technology Evaluation Chatbot"
 APP_INTRO = """
-In this interactive exercise, you will interact with a clinical chatbot that will help you understand your patient's condition. You must determine their primary complaint and provide a differential diagnosis.
+In this interactive exercise, you will interact with a student chatbot that will help you understand your student's assistive technology needs. You must determine their functional limitations and provide recommendations for assistive technology as classroom accomodations.
 """
 
 APP_HOW_IT_WORKS = """
 This app provides a structured way to interact with an AI-powered clinical chatbot.
 
-The chatbot has been provided with a patient history and a list of symptoms. Your job is to determine the primary complaint and provide a differential diagnosis.
+The chatbot has been provided with a student history and a list of functional limitations. Your job is to determine the primary limitations and provide recommendations.
 
-The user will be able to have a free-form conversation with the chatbot to clarify their condition. Then they will input their primary complaint and a differential diagnosis.
+The user will be able to have a free-form conversation with the chatbot to clarify their AT needs. Then they will input their primary complaint and recommendations.
  """
 
 SHARED_ASSET = {
@@ -21,96 +21,87 @@ SHARED_ASSET = {
 HTML_BUTTON = {
 }
 
-SYSTEM_PROMPT = """You are an assistant for a clinical simulation exercise for a student user who is playing the role of a doctor. You will answer the user's questions and sometime assess their accuracy.
+SYSTEM_PROMPT = """You are an assistant for an assistive technology assessment simulation exercise for a student who is playing the role of an assistive technology specialist in a school. You will answer the user's questions and sometimes assess their accuracy.
 """
 
 PHASES = {
     "interview": {
-        "name": "Patient Interview: Donna",
+        "name": "Patient Interview: Melissa",
         "fields": {
             "intro": {
                 "type": "markdown",
-                "body": """<p>Donna is a new patient in your office. She is a 65-year old woman who has been experiencing shortness of breath for the past 2 weeks. She is a smoker and has a history of hypertension. You only have <strong>15 minutes</strong> to interview Donna and determine her primary complaint and differential diagnosis. For this simulation, that means you'll be able to ask her up to 10 questions.</p>""",
+                "body": """<p>Melissa is a new student in your school. She is a 12-year old girl who has difficulty reading and understanding oral instructions. She has been diagnosed with dyslexia and receptive language disorder. You only have <strong>30 minutes</strong> to assess Melissa and determine what classroom accommodations might help her. For this simulation, that means you'll be able to ask her up to 30 questions.</p>""",
                 "unsafe_allow_html": True,
             },
             "patient_image": {
                 "type": "image",
                 "decorative": True,
                 "width": 300,
-                "image": "app_images/donna.webp",
-                "caption": "Your new patient Donna is a 65-year old woman with a history of hypertension and currently experiencing shortness of breath.",
+                "image": "app_images/melissaateval.webp",
+                "caption": "Your new patient Melissa is a 12-year old girl with difficulty reading and understanding oral instructions.",
             },
             "chat": {
                 "type": "chat_input",
                 "max_messages": 10,
-                "placeholder": "Ask Donna something...",
-                "initial_assistant_message": "Hi Doctor, can you help me with my recent breathing issues?"
+                "placeholder": "Ask Melissa something...",
+                "initial_assistant_message": "Hi Teacher, can you help do better at school?"
             }
         },
-        "phase_instructions": """For this chat, you play the role of a 65-year old woman named Donna with a history of hypertension and currently experiencing shortness of breath. The user is playing the role of a doctor. You will be asked questions by the doctor and respond with a short answer.
-        Here is more information about Donna:
+        "phase_instructions": """For this chat, you play the role of a 12 year old girl named Melissa with a history of reading difficulties and understanding oral instructions. The user is playing the role of an assistive technology evaluator. You will be asked questions by the evalulator and respond with a short answer.
+        Here is more information about Melissa:
         Here is the information for your role:
-Patient Name: Donna
-Age: 65
+Student Name: Melissa
+Age: 12
 Gender: Female
-Chief Complaint: Shortness of breath, experienced for the past 2 weeks.
+Chief Complaint: Difficulty completing reading assignments and following her teacher's instructions.
 
 # Patient History:
 1. Medical History:
 
-    a. Hypertension: Diagnosed approximately 15 years ago and has been managed with antihypertensive medication (specify if known).
-    b. Smoking History: Current smoker, with a smoking history of approximately X pack-years (estimated at 1 pack per day for 40+ years). The exact duration and pack count would need to be confirmed.
-    c. No Known Allergies.
+    a. Dyslexia: Diagnosed approximately 4 years ago and no assistive technology has been used to support her.
+    b. Receptive Language Disorder: Has difficulty understanding what teachers say, gestures, and what is read. Has difficulty with spoken directions and multi-step directions. Has difficulty learning new words.
+    
 2. Family History:
 
-    a. Mother: Died from complications of cardiovascular disease at age 70.
-    b. Father: History of lung disease (chronic bronchitis) and died of emphysema at age 75.
-    c. Siblings: Brother with type 2 diabetes, sister with hypertension.
+    a. Mother: is a teacher's aide.
+    b. Father: is an engineer with dyslexia.
+    c. Siblings: have no learning disabilities.
 3. Social History:
 
-    a. Lifestyle: Sedentary; occasional walks but not regular exercise.
-    b. Diet: No specific dietary restrictions; consumes processed foods occasionally, moderate salt intake.
-    c. Alcohol Consumption: Social drinker, approximately 2 drinks per week.
-    d. Occupation: Retired, previously worked as a schoolteacher.
+    a. Lifestyle: mother is available to help her with homework.
+    b. Diet: omega-3 fatty acids, fresh fruits and vegetables, and vitamins and minerals to help with dyslexia.
+    
 4. Medications:
 
-    a. Amlodipine: For blood pressure management, taken daily.
-    b. Aspirin: Low-dose, taken daily for cardiovascular protection.
-    c. Over-the-counter cough suppressant: Recently began taking for relief from mild coughing spells accompanying her shortness of breath.
+    a. Ritalin: for ADHD.
 
-# Primary Symptoms:
+# Primary Learning Challenges:
 
-1. Shortness of Breath (Dyspnea):
+1. Difficulty Reading Boods:
 
-    a. Duration: 2 weeks.
-    b. Characterized as occurring both at rest and with minimal exertion, such as walking short distances.
-    c. No history of similar symptoms in the past.
-    d. No significant improvement with rest.
-    e. Difficulty breathing more pronounced when lying flat (orthopnea).
-2. Chronic Cough:
+    a. Duration: 4 years
+    b. Characterized as Difficulty decoding sounds and blending them into words.
+    c. Slow and laborious reading speed.
+    d. Misinterpreting punctuation and capitalization.
+    e. Difficulty understanding what she reads.
+2. Receptive Language Disorder:
 
-    a. Cough with occasional sputum production (amount and color unspecified).
-    b. Coughing spells occurring throughout the day, more frequent in the morning.
+    a. Having trouble understanding what people say, gestures, or what is read.
+    b. Having trouble following spoken directions and multi-step instructions.
 # Secondary Symptoms:
-1. Fatigue:
-    a. Generalized tiredness and reduced energy levels over the past 2 weeks.
-    b. More noticeable than her usual baseline fatigue.
-2. Chest Discomfort:
-    a. Occasional mild tightness in the chest, especially after coughing fits.
-    b. No reported radiation of pain to the arms, jaw, or back.
-3. Mild Edema:
-    a. Noticeable swelling in the lower extremities, especially at the end of the day.
-    b. Slight improvement after elevating legs.
-4. Intermittent Dizziness:
-    a. Lightheadedness experienced occasionally while standing up quickly.  
-    b. Possibly related to her blood pressure medication.
+1. Attention-Deficit/Hyperactivity Disorder:
+    a. Difficulty paying attention to details or making careless mistakes.
+    b. Trouble sustaining attention in tasks or activities.
+    c. Easily distracted by external stimuli.
+    d. Forgetfulness or losing things frequently.
+    e. Difficulty following instructions or completing tasks.
         """,
         "user_prompt": """From the chat, provide feedback on the following: 
-        1. Whether the doctor is asking appropriate questions.
-        2. Whether the doctor has an appropriate bedside manner and makes the patient feel comfortable. 
-        3. Whether the doctor is staying on topic.
+        1. Whether the evaluator is asking appropriate questions.
+        2. Whether the evaluator has an appropriate manner and makes the student feel comfortable. 
+        3. Whether the evaluator is staying on topic.
 
-        Begin your response with "Here is some feedback on your chat with Donna:"
+        Begin your response with "Here is some feedback on your chat with Melissa:"
         """,
         "ai_response": True,
         "allow_skip": False,
@@ -127,44 +118,50 @@ Chief Complaint: Shortness of breath, experienced for the past 2 weeks.
             "diagnosis": {
                 "type": "text_area",
                 "height": 200,
-                "label": "Establish a differential diagnosis for Donna.",
+                "label": "Assistive Technology recommendations for Melissa.",
             }
         },
-        "phase_instructions": """The user will provide you with the patient's primary complaint and her differential diagnosis. You will provide feedback on the accuracy of their claim(s) based on the evidence they gathere in the conversation.
+        "phase_instructions": """The user will provide you with the student's primary complaint and her assistive technology recommendations. You will provide feedback on the accuracy of their claim(s) based on the evidence they gathere in the conversation.
         
         Here are some more details:     
     # Differential Considerations:
-1. Chronic Obstructive Pulmonary Disease (COPD):
-    a. Likely given her smoking history, cough, and recent onset of dyspnea.
-    b. Recommend spirometry and imaging (chest X-ray or CT) for confirmation.
-2. Congestive Heart Failure (CHF):
-    a. Possibility due to dyspnea, edema, and history of hypertension.
-    b. Further investigation with echocardiography and BNP levels would be useful.
-3. Pulmonary Hypertension or Pulmonary Embolism:
-    a. While less common, consider ruling out due to sudden onset of symptoms and history of smoking.
-4. Lung Cancer:
-    a. Given her age and smoking history, screening might be advisable.
+1. Text to Speech Software:
+    a. Takes text as an input and reads it aloud.
+    b. Helps students learn to pronounce words.
+2. Speech to Text Software:
+    a. Transcribes spoken words into text.
+    b. Removes the stress of spelling and punctuation in writing.
+3. Highlight each word as it is read:
+    a. Provides visual and auditory modalities of information input.
+4. Visual Aids:
+    a. Diagrams and pictures that help explain concepts.
+    b. Provide diagrams of verbal instructions.
+5. Breaking down instructions
+    a. Reduce multi-step instructions into single steps.
+    b. Allow the student to complete a step before providing the next step.
+6. Provide Extra Time
+    a. Prodivde student with additional time to complete work
 
 # Plan for Further Evaluation:
-1. Diagnostic Imaging:
-    a. Chest X-ray or CT scan to evaluate lung structure.
-2. Laboratory Tests:
-    a. Basic metabolic panel, BNP, D-dimer (if PE suspected).
-3. Pulmonary Function Tests (PFTs):
-    a. Spirometry to assess for COPD or restrictive lung disease.
-4. Electrocardiogram (ECG):
-    a. To assess any cardiac involvement, such as ischemia or arrhythmia.""",
-        "user_prompt": "Donna's primary complaint is: {primary_complaint}. I believe her diagnosis is: {diagnosis}",
+1. Predictive Assessment of Reading (PAR):
+    a.  screening assessment that is used to identify how well a student is predicted to read and if that student will experience difficulty with a specific area of reading. Each of these aspects are covered: Phonemic Awareness, Vocabulary, Single Letter and Word reading, and Fluency.
+2. Dynamic Indicators of Basic Early Literacy Skills (DIBELS):
+    a. standardized tests used to assess a student's fundamental reading skills, like phonemic awareness, letter recognition, and fluency, typically administered to children from kindergarten through 8th grade to identify potential literacy difficulties and monitor their progress over time; essentially, it's a quick way to gauge a child's basic reading abilities.
+3. Texas Primary Reading Inventory (TPRI):
+    a. one-on-one assessment to quickly assess students' early reading skills, helping teachers provide targeted instruction so that students improve as readers.
+4. AIMSweb screening assessment:
+    a. To assess Early literacy, Reading, Early numeracy, Mathematics, Spelling, and Writing.""",
+        "user_prompt": "Melissa's primary complaint is: {primary_complaint}. I believe her diagnosis is: {diagnosis}",
         "ai_response": True,
         
         "scored_phase": True,
         "rubric": """
         1. Primary Complaint:
-        2 points - The user has provided a primary complaint that is consistent with Donna's presentation and that they've extracted from the chat with Donna.
-        0 points - The user has provided a primary complaint that is not consistent with Donna's presentation or they did not extract it from the chat with Donna..
+        2 points - The user has provided a primary complaint that is consistent with Melissa's presentation and that they've extracted from the chat with Melissa.
+        0 points - The user has provided a primary complaint that is not consistent with Melissa's presentation or they did not extract it from the chat with Melissa..
         2. Differential Diagnosis:
-        2 points - The user has provided a differential diagnosis that is consistent with Donna's presentation and that they've extracted from the chat with Donna.
-        0 points - The user has provided a differential diagnosis that is not consistent with Donna's presentation or they did not extract it from the chat with Donna.
+        2 points - The user has provided a differential diagnosis that is consistent with Melissa's presentation and that they've extracted from the chat with Melissa.
+        0 points - The user has provided a differential diagnosis that is not consistent with Melissa's presentation or they did not extract it from the chat with Melissa.
         """,
         "minimum_score": 2,
     }
