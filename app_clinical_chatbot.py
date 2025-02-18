@@ -47,7 +47,7 @@ PHASES = {
                 "initial_assistant_message": "Hi Teacher, can you help do better at school?"
             }
         },
-        "phase_instructions": """For this chat, you play the role of a 12 year old girl named Melissa with a history of reading difficulties and understanding oral instructions. The user is playing the role of an assistive technology evaluator. You will be asked questions by the evaluator and respond with a short answer. Respond at a seventh-grade language level.
+        "phase_instructions": """For this chat, you play the role of a 12 year old girl named Melissa with a history of reading difficulties and understanding oral instructions. The user is playing the role of an assistive technology evaluator. You will be asked questions by the evaluator and respond with a short answer. Respond at a fifth-grade language level.
         Here is more information about Melissa:
         Here is the information for your role:
 Student Name: Melissa
