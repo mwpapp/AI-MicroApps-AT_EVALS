@@ -10,9 +10,9 @@ In this interactive exercise, you will interact with a student chatbot that will
 APP_HOW_IT_WORKS = """
 This app provides a structured way to interact with an AI-powered clinical chatbot.
 
-The chatbot has been provided with a student history and a list of functional limitations. Your job is to determine the primary limitations and provide recommendations.
+The chatbot has been provided with a student history and a list of functional limitations. Your job is to figure out the primary limitations and give recommendations.
 
-The user will be able to have a free-form conversation with the chatbot to clarify their AT needs. Then they will input their primary complaint and recommendations.
+The user will be able to have a free-form conversation with the chatbot to clarify their AT needs. Then they will input their primary challenge and recommendations.
  """
 
 SHARED_ASSET = {
@@ -26,19 +26,19 @@ SYSTEM_PROMPT = """You are an assistant for an assistive technology assessment s
 
 PHASES = {
     "interview": {
-        "name": "Patient Interview: Melissa",
+        "name": "Student Interview: Melissa",
         "fields": {
             "intro": {
                 "type": "markdown",
                 "body": """<p>Melissa is a new student in your school. She is a 12-year old girl who has difficulty reading and understanding oral instructions. She has been diagnosed with dyslexia and receptive language disorder. You only have <strong>30 minutes</strong> to assess Melissa and determine what classroom accommodations might help her. For this simulation, that means you'll be able to ask her up to 30 questions.</p>""",
                 "unsafe_allow_html": True,
             },
-            "patient_image": {
+            "student_image": {
                 "type": "image",
                 "decorative": True,
                 "width": 300,
                 "image": "app_images/melissaateval.webp",
-                "caption": "Your new patient Melissa is a 12-year old girl with difficulty reading and understanding oral instructions.",
+                "caption": "Your new student Melissa is a 12-year old girl with difficulty reading and understanding oral instructions.",
             },
             "chat": {
                 "type": "chat_input",
@@ -47,16 +47,16 @@ PHASES = {
                 "initial_assistant_message": "Hi Teacher, can you help do better at school?"
             }
         },
-        "phase_instructions": """For this chat, you play the role of a 12 year old girl named Melissa with a history of reading difficulties and understanding oral instructions. The user is playing the role of an assistive technology evaluator. You will be asked questions by the evalulator and respond with a short answer.
+        "phase_instructions": """For this chat, you play the role of a 12 year old girl named Melissa with a history of reading difficulties and understanding oral instructions. The user is playing the role of an assistive technology evaluator. You will be asked questions by the evaluator and respond with a short answer. Respond at a seventh-grade language level.
         Here is more information about Melissa:
         Here is the information for your role:
 Student Name: Melissa
 Age: 12
 Gender: Female
-Chief Complaint: Difficulty completing reading assignments and following her teacher's instructions.
+Chief Challenges: Difficulty completing reading assignments and following her teacher's instructions.
 
-# Patient History:
-1. Medical History:
+# student History:
+1. Educational Evaluation:
 
     a. Dyslexia: Diagnosed approximately 4 years ago and no assistive technology has been used to support her.
     b. Receptive Language Disorder: Has difficulty understanding what teachers say, gestures, and what is read. Has difficulty with spoken directions and multi-step directions. Has difficulty learning new words.
@@ -88,7 +88,7 @@ Chief Complaint: Difficulty completing reading assignments and following her tea
 
     a. Having trouble understanding what people say, gestures, or what is read.
     b. Having trouble following spoken directions and multi-step instructions.
-# Secondary Symptoms:
+# Secondary Challenges:
 1. Attention-Deficit/Hyperactivity Disorder:
     a. Difficulty paying attention to details or making careless mistakes.
     b. Trouble sustaining attention in tasks or activities.
@@ -108,12 +108,12 @@ Chief Complaint: Difficulty completing reading assignments and following her tea
         "show_prompt": False,
         "read_only_prompt": False
     },
-    "primary_complaint": {
-        "name": "Primary Complaint",
+    "primary_challenge": {
+        "name": "Primary challenge",
         "fields": {
-            "primary_complaint": {
+            "primary_challenge": {
                 "type": "text_input",
-                "label": "What is the user's primary complaint?",
+                "label": "What is the user's primary challenge?",
             },
             "diagnosis": {
                 "type": "text_area",
@@ -121,7 +121,7 @@ Chief Complaint: Difficulty completing reading assignments and following her tea
                 "label": "Assistive Technology recommendations for Melissa.",
             }
         },
-        "phase_instructions": """The user will provide you with the student's primary complaint and her assistive technology recommendations. You will provide feedback on the accuracy of their claim(s) based on the evidence they gathere in the conversation.
+        "phase_instructions": """The user will provide you with the student's primary challenge and her assistive technology recommendations. You will provide feedback on the accuracy of their claim(s) based on the evidence they gathere in the conversation.
         
         Here are some more details:     
     # Differential Considerations:
@@ -150,15 +150,15 @@ Chief Complaint: Difficulty completing reading assignments and following her tea
 3. Texas Primary Reading Inventory (TPRI):
     a. one-on-one assessment to quickly assess students' early reading skills, helping teachers provide targeted instruction so that students improve as readers.
 4. AIMSweb screening assessment:
-    a. To assess Early literacy, Reading, Early numeracy, Mathematics, Spelling, and Writing.""",
-        "user_prompt": "Melissa's primary complaint is: {primary_complaint}. I believe her diagnosis is: {diagnosis}",
+    a. To assess Early Literacy, Reading, Early Numeracy, Mathematics, Spelling, and Writing.""",
+        "user_prompt": "Melissa's primary challenge is: {primary_challenge}. I believe her diagnosis is: {diagnosis}",
         "ai_response": True,
         
         "scored_phase": True,
         "rubric": """
-        1. Primary Complaint:
-        2 points - The user has provided a primary complaint that is consistent with Melissa's presentation and that they've extracted from the chat with Melissa.
-        0 points - The user has provided a primary complaint that is not consistent with Melissa's presentation or they did not extract it from the chat with Melissa..
+        1. Primary challenge:
+        2 points - The user has provided a primary challenge that is consistent with Melissa's presentation and that they've extracted from the chat with Melissa.
+        0 points - The user has provided a primary challenge that is not consistent with Melissa's presentation or they did not extract it from the chat with Melissa..
         2. Differential Diagnosis:
         2 points - The user has provided a differential diagnosis that is consistent with Melissa's presentation and that they've extracted from the chat with Melissa.
         0 points - The user has provided a differential diagnosis that is not consistent with Melissa's presentation or they did not extract it from the chat with Melissa.
@@ -181,7 +181,7 @@ RAG_IMPLEMENTATION = False # make true only when document exists
 SOURCE_DOCUMENT = "sample.pdf" # file uploaded in source_docs if only
 
 PAGE_CONFIG = {
-    "page_title": "Clinical Chatbot",
+    "page_title": "AT Evaluation Chatbot",
     "page_icon": "⚕️",
     "layout": "centered",
     "initial_sidebar_state": "expanded"
