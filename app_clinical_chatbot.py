@@ -1,4 +1,4 @@
-APP_URL = "https://melissachatbota.streamlit.app/"
+APP_URL = "https://melissachatbot-v1.streamlit.app/"
 APP_IMAGE = "clinical_chatbot.webp"
 PUBLISHED = True
 
