@@ -186,7 +186,7 @@ SOURCE_DOCUMENT = "sample.pdf" # file uploaded in source_docs if only
 
 PAGE_CONFIG = {
     "page_title": "AT Evaluation Chatbot",
-    "page_icon": "⚕️",
+    "page_icon": "⚕🍎",
     "layout": "centered",
     "initial_sidebar_state": "collapsed"
 }
