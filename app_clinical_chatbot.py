@@ -1,5 +1,5 @@
 APP_URL = "https://melissachatbot-v1.streamlit.app/"
-APP_IMAGE = "clinical_chatbot.webp"
+APP_IMAGE = "education_chatbot.webp"
 PUBLISHED = True
 
 ## Set the API key and model name
