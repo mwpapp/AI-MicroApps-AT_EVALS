@@ -188,7 +188,7 @@ PAGE_CONFIG = {
     "page_title": "AT Evaluation Chatbot",
     "page_icon": "⚕️",
     "layout": "centered",
-    "initial_sidebar_state": "hidden"
+    "initial_sidebar_state": "collapsed"
 }
 
 SIDEBAR_HIDDEN = False
