@@ -4,7 +4,6 @@ PUBLISHED = True
 
 ## Set the API key and model name
 MODEL="gpt-4o-mini"
-##client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
 
 APP_TITLE = "Assistive Technology Evaluation Chatbot"
 APP_INTRO = """
