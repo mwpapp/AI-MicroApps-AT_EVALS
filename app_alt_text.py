@@ -1,4 +1,4 @@
-APP_URL = "https://alt-text.streamlit.app"
+APP_URL = "https://alt-text-describe.streamlit.app"
 APP_IMAGE = "alt_text_flat.webp"
 PUBLISHED = True
 
