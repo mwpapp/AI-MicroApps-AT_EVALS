@@ -85,7 +85,7 @@ PHASES = {
 
 }
 
-PREFERRED_LLM = "gpt-4o"
+PREFERRED_LLM = "gpt-4o-mini"
 LLM_CONFIG_OVERRIDE = {}
 
 SCORING_DEBUG_MODE = True
