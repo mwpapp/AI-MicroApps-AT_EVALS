@@ -111,7 +111,7 @@ def get_image_base64(image_path):
 
 def main():
     st.set_page_config(page_title="AI MicroApps", page_icon="🤖", layout="wide")
-    st.title("AI MicroApps Directory")
+    st.title("Assistive Technology Training Directory")
 
     # Scan for all app files (starting with 'app_' and ending in '.py')
     apps_metadata = []
