@@ -2,7 +2,7 @@ APP_URL = "https://kevinatevaluation-v1.streamlit.app/"
 APP_IMAGE = "at_chatbot_hearing.webp"
 PUBLISHED = True
 
-APP_TITLE = "Assistive Technology Evaluation Chatbot"
+APP_TITLE = "Kevin's Assistive Technology Evaluation "
 APP_INTRO = """
 In this interactive exercise, you will engage with a student chatbot that will help you understand a student's assistive technology needs. You must determine their functional limitations and provide recommendations for assistive technology as classroom accommodations.
 """
