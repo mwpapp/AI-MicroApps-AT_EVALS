@@ -110,14 +110,7 @@ def get_image_base64(image_path):
         return base64.b64encode(img_file.read()).decode("utf-8")
 
 def main():
-            "page_image": {
-                "type": "image",
-                "decorative": True,
-                "width": 300,
-                "image": "app_images/reat_masthead.png",
-                "caption": "Rehabilitation Engineering and Assistive Technology Logo is a gear with a person on the left side",
-            },
-    st.set_page_config(page_title="AI MicroApps", page_icon="🤖", layout="wide")
+    st.set_page_config(page_title="Assistive Technology AI Training Apps", page_icon="🚌", layout="wide")
     st.title("Assistive Technology Training Directory")
 
     # Scan for all app files (starting with 'app_' and ending in '.py')
