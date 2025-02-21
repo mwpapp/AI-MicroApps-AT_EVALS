@@ -12,7 +12,7 @@ This app provides an interactive platform to work with an AI chatbot.
 
 The chatbot has been provided with a student history and a list of functional limitations. Your job is to determine the primary limitations and provide recommendations.
 
-The user can have a free-form conversation with the chatbot to clarify their AT needs. Then, they will input their primary complaint and recommendations.
+The user can have a free-form conversation with the chatbot to clarify their AT needs. Then, they will input their functional limitations and recommendations.
  """
 
 SHARED_ASSET = {
