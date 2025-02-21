@@ -16,7 +16,7 @@ This app provides a structured way to interact with an AI-powered clinical chatb
 
 The chatbot has been provided with a student history and a list of functional limitations. Your job is to figure out the primary limitations and give recommendations.
 
-The user will be able to have a free-form conversation with the chatbot to clarify their AT needs. Then they will input their primary challenge and recommendations.
+The user will be able to have a free-form conversation with the chatbot to clarify their AT needs. Then they will input their functional limitations and recommendations.
  """
 
 SHARED_ASSET = {
@@ -186,7 +186,7 @@ SOURCE_DOCUMENT = "sample.pdf" # file uploaded in source_docs if only
 
 PAGE_CONFIG = {
     "page_title": "AT Evaluation Chatbot",
-    "page_icon": "⚕️",
+    "page_icon": "✏️",
     "layout": "centered",
     "initial_sidebar_state": "expanded"
 }
