@@ -7,7 +7,7 @@ MODEL="gpt-4o-mini"
 
 APP_TITLE = "Melissa's Assistive Technology Evaluation"
 APP_INTRO = """
-In this interactive exercise, you will interact with a student chatbot that will help you understand your student's assistive technology needs. You must determine their functional limitations and provide recommendations for assistive technology as classroom accomodations.
+In this interactive exercise, you will interact with a chatbot student with dyslexia and receptive language disorder that will help you understand your student's assistive technology needs. You must determine their functional limitations and provide recommendations for assistive technology as classroom accomodations.
 """
 
 APP_HOW_IT_WORKS = """
