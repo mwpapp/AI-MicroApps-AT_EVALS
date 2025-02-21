@@ -5,7 +5,7 @@ PUBLISHED = True
 ## Set the API key and model name
 MODEL="gpt-4o-mini"
 
-APP_TITLE = "Assistive Technology Evaluation Chatbot"
+APP_TITLE = "Melissa's Assistive Technology Evaluation"
 APP_INTRO = """
 In this interactive exercise, you will interact with a student chatbot that will help you understand your student's assistive technology needs. You must determine their functional limitations and provide recommendations for assistive technology as classroom accomodations.
 """
