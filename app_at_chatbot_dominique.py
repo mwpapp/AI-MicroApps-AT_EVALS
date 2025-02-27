@@ -169,8 +169,8 @@ Assistive technology to improve hearing """,
         2 points - The user has provided a primary challenge that is consistent with Diminique's presentation and that they've extracted from the chat with Dominique.
         0 points - The user has provided a primary challenge that is not consistent with Dominique's presentation or they did not extract it from the chat with Dominique..
         2. Differential Diagnosis:
-        2 points - The user has provided a differential diagnosis that is consistent with Dominique's presentation and that they've extracted from the chat with Dominique.
-        0 points - The user has provided a differential diagnosis that is not consistent with Dominique's presentation or they did not extract it from the chat with Dominique.
+        2 points - The user has provided assistive technology recommendations that are consistent with Dominique's presentation and that they've extracted from the chat with Dominique.
+        0 points - The user has provided assistive technology recommendations that are not consistent with Dominique's presentation or they did not extract it from the chat with Dominique.
         """,
         "minimum_score": 2,
     }
