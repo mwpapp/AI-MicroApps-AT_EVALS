@@ -8,7 +8,7 @@ MODEL="gpt-4o-mini"
 
 APP_TITLE = "Dominique's Assistive Technology Evaluation"
 APP_INTRO = """
-In this interactive exercise, you will interact with a student chatbot that will help you understand your student's assistive technology needs. You must determine their functional limitations and provide recommendations for assistive technology as classroom accomodations.
+In this interactive exercise, you will interact with a student chatbot with a vision impairment that will help you understand your student's assistive technology needs. You must determine their functional limitations and provide recommendations for assistive technology as classroom accommodations.
 """
 
 APP_HOW_IT_WORKS = """
