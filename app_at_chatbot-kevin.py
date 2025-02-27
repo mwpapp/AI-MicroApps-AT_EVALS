@@ -1,5 +1,5 @@
 APP_URL = "https://kevinatevaluation-v1.streamlit.app/"
-APP_IMAGE = "at_chatbot_hearing.webp"
+APP_IMAGE = "at-chatbot-learning.webp"
 PUBLISHED = True
 
 APP_TITLE = "Kevin's Assistive Technology Evaluation "
