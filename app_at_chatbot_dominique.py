@@ -39,7 +39,7 @@ PHASES = {
             },
             "student_image": {
                 "type": "image",
-                "decorative": True,
+                "decorative": False,
                 "width": 300,
                 "image": "app_images/dominique.webp",
                 "caption": "Your student Dominque is a 16-year-old young man with Retinitis Pigmentosa.",
