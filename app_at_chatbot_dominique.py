@@ -1,4 +1,4 @@
-APP_URL = "https://Dominiquechatbot-v1.streamlit.app/"
+APP_URL = "https://dominique-chatbot.streamlit.app/"
 APP_IMAGE = "ai_chatbot_vision.webp"
 PUBLISHED = True
 
