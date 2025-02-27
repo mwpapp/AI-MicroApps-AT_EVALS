@@ -1,5 +1,5 @@
 APP_URL = "https://Dominiquechatbot-v1.streamlit.app/"
-APP_IMAGE = "clinical_chatbot_general.webp"
+APP_IMAGE = "ai_chatbot_vision.webp"
 PUBLISHED = True
 
 ## Set the API key and model name
