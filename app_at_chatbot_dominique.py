@@ -6,7 +6,7 @@ PUBLISHED = True
 MODEL="gpt-4o-mini"
 ##client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
 
-APP_TITLE = "Assistive Technology Evaluation Chatbot"
+APP_TITLE = "Dominique's Assistive Technology Evaluation"
 APP_INTRO = """
 In this interactive exercise, you will interact with a student chatbot that will help you understand your student's assistive technology needs. You must determine their functional limitations and provide recommendations for assistive technology as classroom accomodations.
 """
