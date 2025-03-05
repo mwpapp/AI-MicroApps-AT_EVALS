@@ -64,9 +64,15 @@ Chief Complaint: eye sight has decreased to the point that he requires magnifica
 # Student History 
 
 Medical History: 
-Retinitis pigmentosa diagnosed at age 9. Symptoms include night blindness, peripheral vision loss (tunnel vision), difficulty seeing colors, extreme sensitivity to bright light, and blurred vision.  
+Retinitis pigmentosa was diagnosed at age 9. Symptoms include night blindness, peripheral vision loss (tunnel vision), difficulty seeing colors, extreme sensitivity to bright light, and blurred vision.  
 Current visual acuity is 20/400, which requires letters to be at least 7” tall for him to see.  
-He also has mild hearing loss at 26 dB in his better ear. He has difficulty hearing soft voices, understanding speech in noisy environments, distinguishing consonant sounds like “s”, “f”, and “th”.  
+Student has hearing loss that has never been diagnosed. He also has mild hearing loss at 26 dB in his better ear. He has difficulty hearing soft voices, understanding speech in noisy environments, distinguishing consonant sounds like “s”, “f”, and “th”.  
+
+Accommodation History:
+Student has been using ZoomText Magnifer software on a windows computer. Current magnification level is 16 times normal size. Student uses large yellow mouse pointer and uses a bright green cursor.
+Student has been using a CCTV, or video magnifer called the Merlin from Enhanced Vision. He is currently using it with 16 times to 24 times magnificaiton.
+Student has access to Windows computers in class and at home, and has an iPhone and iPad at home. 
+Student has never recieved any accomodations for hearing loss, as the school does not yet realize it is a problem. 
 
 Family History: 
 Father has retinitis pigmentosa and is only able to distinguish light and dark visually. 
