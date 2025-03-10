@@ -34,7 +34,7 @@ PHASES = {
         "fields": {
             "intro": {
                 "type": "markdown",
-                "body": """<p>Dominic is a student in 11th grade in your school who has been diagnosed with Retinitis Pigmentosa, a degenerative eye disease that leads to the progressive breakdown of the light-sensitive cells on his retina. His eyesight has been getting gradually worse, and he is no longer able to effectively read large text using a video magnifier or screen magnification software. You have 30 minutes to assess Dominic and determine what assistive technology might accommodate him in class. For this simulation, that means you’ll be able to ask him up to 30 questions.</p>""",
+                "body": """<p>Dominic is a student in 11th grade in your school who has been diagnosed with Retinitis Pigmentosa, a degenerative eye disease that leads to the progressive breakdown of the light-sensitive cells on his retina. His eyesight has been getting gradually worse, and he is no longer able to effectively read large text using a video magnifier or screen magnification software. You have 30 minutes to assess Dominic and determine what assistive technology might accommodate him in class. For this simulation, that means you’ll be able to ask him up to 60 questions.</p>""",
                 "unsafe_allow_html": True,
             },
             "student_image": {
@@ -52,7 +52,7 @@ PHASES = {
                 "initial_assistant_message": "Good morning, Teacher, can you help do better at school?"
             }
         },
-        "phase_instructions": """For this chat, you play the role of a 12 year old girl named Dominic with a history of reading difficulties and understanding oral instructions. The user is playing the role of an assistive technology evaluator. You will be asked questions by the evaluator and respond with a short answer. Respond at a fifth-grade language level.
+        "phase_instructions": """For this chat, you play the role of a 16 year old boy named Dominic with a history of low vision and difficulty hearing. The user is playing the role of an assistive technology evaluator. You will be asked questions by the evaluator and respond with a short answer. Respond at a tenth-grade language level with short answers. Provide short, concise answers, and do not volunteer information the evaluator didn't ask for. The evaluator will need to ask direct questions to get you to provide that piece of information. 
         Here is more information about Dominic:
         Here is the information for your role: 
 
