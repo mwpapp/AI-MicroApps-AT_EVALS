@@ -1,4 +1,4 @@
-APP_URL = "https://dominique-chatbot.streamlit.app/"
+APP_URL = "https://dominic-chatbot.streamlit.app/"
 APP_IMAGE = "ai_chatbot_vision.webp"
 PUBLISHED = True
 
@@ -6,7 +6,7 @@ PUBLISHED = True
 MODEL="gpt-4o-mini"
 ##client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
 
-APP_TITLE = "Dominique's Assistive Technology Evaluation"
+APP_TITLE = "Dominic's Assistive Technology Evaluation"
 APP_INTRO = """
 In this interactive exercise, you will interact with a student chatbot with a vision impairment that will help you understand your student's assistive technology needs. You must determine their functional limitations and provide recommendations for assistive technology as classroom accommodations.
 """
@@ -30,30 +30,30 @@ SYSTEM_PROMPT = """You are an assistant for an assistive technology assessment s
 
 PHASES = {
     "interview": {
-        "name": "Student Interview: Dominique",
+        "name": "Student Interview: Dominic",
         "fields": {
             "intro": {
                 "type": "markdown",
-                "body": """<p>Dominique is a student in 11th grade in your school who has been diagnosed with Retinitis Pigmentosa, a degenerative eye disease that leads to the progressive breakdown of the light-sensitive cells on his retina. His eyesight has been getting gradually worse, and he is no longer able to effectively read large text using a video magnifier or screen magnification software. You have 30 minutes to assess Dominique and determine what assistive technology might accommodate him in class. For this simulation, that means you’ll be able to ask him up to 30 questions.</p>""",
+                "body": """<p>Dominic is a student in 11th grade in your school who has been diagnosed with Retinitis Pigmentosa, a degenerative eye disease that leads to the progressive breakdown of the light-sensitive cells on his retina. His eyesight has been getting gradually worse, and he is no longer able to effectively read large text using a video magnifier or screen magnification software. You have 30 minutes to assess Dominic and determine what assistive technology might accommodate him in class. For this simulation, that means you’ll be able to ask him up to 30 questions.</p>""",
                 "unsafe_allow_html": True,
             },
             "student_image": {
                 "type": "image",
                 "decorative": False,
                 "width": 300,
-                "image": "app_images/dominique.webp",
+                "image": "app_images/Dominic.webp",
                 "caption": "Your student Dominque is a 16-year-old young man with Retinitis Pigmentosa.",
-                "alt": "A portrait of Dominique, a 16-year-old young African-American man wearing dark glasses and a school uniform in a classroom."
+                "alt": "A portrait of Dominic, a 16-year-old young African-American man wearing dark glasses and a school uniform in a classroom."
             },
             "chat": {
                 "type": "chat_input",
                 "max_messages": 60,
-                "placeholder": "Ask Dominique something...",
+                "placeholder": "Ask Dominic something...",
                 "initial_assistant_message": "Good morning, Teacher, can you help do better at school?"
             }
         },
-        "phase_instructions": """For this chat, you play the role of a 12 year old girl named Dominique with a history of reading difficulties and understanding oral instructions. The user is playing the role of an assistive technology evaluator. You will be asked questions by the evaluator and respond with a short answer. Respond at a fifth-grade language level.
-        Here is more information about Dominique:
+        "phase_instructions": """For this chat, you play the role of a 12 year old girl named Dominic with a history of reading difficulties and understanding oral instructions. The user is playing the role of an assistive technology evaluator. You will be asked questions by the evaluator and respond with a short answer. Respond at a fifth-grade language level.
+        Here is more information about Dominic:
         Here is the information for your role: 
 
 Student Name: Dominque 
@@ -109,7 +109,7 @@ Has difficulty understanding teachers and peers in loud environments and disting
         2. Whether the evaluator has an appropriate manner and makes the student feel comfortable. 
         3. Whether the evaluator is staying on topic.
 
-        Begin your response with "Here is some feedback on your chat with Dominique:"
+        Begin your response with "Here is some feedback on your chat with Dominic:"
         """,
         "ai_response": True,
         "allow_skip": False,
@@ -126,7 +126,7 @@ Has difficulty understanding teachers and peers in loud environments and disting
             "diagnosis": {
                 "type": "text_area",
                 "height": 200,
-                "label": "Assistive Technology recommendations for Dominique.",
+                "label": "Assistive Technology recommendations for Dominic.",
             }
         },
         "phase_instructions": """The user will provide you with the student's primary challenge and her assistive technology recommendations. You will provide feedback on the accuracy of their claim(s) based on the evidence they gathere in the conversation.
@@ -177,17 +177,17 @@ Request hearing aids
 Request seating in the front of the room. 
 
 Assistive technology to improve hearing, such as a classroom FM system or personal FM system such as the Williams Sound PFM Pro Personal FM Listening System """,
-        "user_prompt": "Dominique's primary challenge is: {primary_challenge}. I believe his diagnosis are: {diagnosis}",
+        "user_prompt": "Dominic's primary challenge is: {primary_challenge}. I believe his diagnosis are: {diagnosis}",
         "ai_response": True,
         
         "scored_phase": True,
         "rubric": """
         1. Primary challenge:
-        2 points - The user has provided a primary challenge that is consistent with Dominique's presentation and that they've extracted from the chat with Dominique.
-        0 points - The user has provided a primary challenge that is not consistent with Dominique's presentation or they did not extract it from the chat with Dominique..
+        2 points - The user has provided a primary challenge that is consistent with Dominic's presentation and that they've extracted from the chat with Dominic.
+        0 points - The user has provided a primary challenge that is not consistent with Dominic's presentation or they did not extract it from the chat with Dominic..
         2. Differential Diagnosis:
-        2 points - The user has provided assistive technology recommendations that are consistent with Dominique's presentation and that they've extracted from the chat with Dominique.
-        0 points - The user has provided assistive technology recommendations that are not consistent with Dominique's presentation or they did not extract it from the chat with Dominique.
+        2 points - The user has provided assistive technology recommendations that are consistent with Dominic's presentation and that they've extracted from the chat with Dominic.
+        0 points - The user has provided assistive technology recommendations that are not consistent with Dominic's presentation or they did not extract it from the chat with Dominic.
         """,
         "minimum_score": 2,
     }
