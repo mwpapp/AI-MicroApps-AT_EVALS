@@ -47,7 +47,7 @@ PHASES = {
             },
             "chat": {
                 "type": "chat_input",
-                "max_messages": 30,
+                "max_messages": 60,
                 "placeholder": "Ask Dominique something...",
                 "initial_assistant_message": "Good morning, Teacher, can you help do better at school?"
             }
