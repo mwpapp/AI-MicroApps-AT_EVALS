@@ -72,7 +72,11 @@ Accommodation History:
 Student has been using ZoomText Magnifer software on a windows computer. Current magnification level is 16 times normal size. Student uses large yellow mouse pointer and uses a bright green cursor.
 Student has been using a CCTV, or video magnifer called the Merlin from Enhanced Vision. He is currently using it with 16 times to 24 times magnificaiton.
 Student has access to Windows computers in class and at home, and has an iPhone and iPad at home. 
+Student has never used text-to-speech and never used audiobooks.
+Student has been recieveing large print handouts and worksheets, which he then views on his CCTV/Video Magnifier. 
 Student has never recieved any accomodations for hearing loss, as the school does not yet realize it is a problem. 
+The student has been writing notes with a large felt-tipped pen called the 20-20-style BoldWriter, but can no longer read his notes.
+The student has been sitting in an assigned seat in the center of the classroom.
 
 Family History: 
 Father has retinitis pigmentosa and is only able to distinguish light and dark visually. 
@@ -81,10 +85,13 @@ Mother has completely normal vision.
 Social History 
 Lifestyle: Has a brother and sister with normal vision 
 Diet: takes vitamin A supplements 
+The student is very concerned that he will look different. 
+He is hesitant to use a white cane for orientation and mobility because it will make him look more disabled. 
+He is hesitant to wear hearing aids because he thinks they are really big and other people will make fun of him.
 
 Medications: 
 No medications at this time 
-No eye glasses 
+wears eyeglasses 
 No hearing aids 
 
 # Primary Learning Challenges:  
@@ -132,48 +139,51 @@ Contact the Alabama Instructional Resource Center for the Blind (AIRCB) is a s
 
 Contact local Alabama Institute for the Deaf and Blind (AIDB) to find resources to teach Braille 
 
-Start using audiobooks and electronic texts 
+Start using audiobooks and electronic texts on a tablet or laptop
 
 Contact The Alabama Regional Library for the Blind and Physically Disabled to find resources for audio books. 
 
-Contact National Library Service for the Blind and Print Disabled to learn about the BARD (Braille and Audio Reading Download) system 
+Contact the National Library Service for the Blind and Print Disabled to learn about the BARD (Braille and Audio Reading Download) system. 
 
 Start learning to use a screen reader, depending on the computer operating system 
 
-JAWS for Windows computer is a paid screen reader from Freedom Scientific 
-
-NVDA (Non-Visual Desktop Access) for Windows computer is a free open-source screen reader 
+JAWS for Windows computer is a paid screen reader from Freedom Scientific or NVDA (Non-Visual Desktop Access) for Windows computers is a free open-source screen reader 
 
 Voice Over screen reader for Apple’s MacOS and iOS and iPadOS devices 
 
 ChromeVox for Chromebooks and ChromeOS devices 
 
+
+
+Receive training to use a screen reader and how to navigate a Windows laptop or iPad with the screen reader.
+Receive training on using a tablet to take a photo of documents and use optical character recognition (OCR) software to read it to him. 
+
 Provide 3D manipulatives   
-
-3D manipulatives for blind students are tactile objects, often created using a 3D printer, that allow them to physically explore and understand concepts through touch, particularly in areas like geometry, science, and anatomy, by providing detailed, textured representations of shapes, structures, and features that they cannot see 
-
-These can include 3D printed models of organs, geometric shapes with raised lines, molecular structures, and even maps with textured topography, all designed with accessibility in mind, often including braille labels for identification.  
+     3D manipulatives for blind students are tactile objects, often created using a 3D printer, that allow them to physically explore and understand concepts through touch, particularly in areas like geometry, science, and anatomy, by providing detailed, textured representations of shapes, structures, and features that they cannot see 
+     These can include 3D printed models of organs, geometric shapes with raised lines, molecular structures, and even maps with textured topography, all designed with accessibility in mind, often including braille labels for identification.  
 
 # Plan for Further Evaluation 
 
-Braille Displays 
+Try  different Braille Displays 
 
-Explore learning to read and use a Braille Display 
+Explore learning and training to read and use a Braille Display 
 
 Explore using a Braille tablet, such as the Monarch from American Printing House for the Blind 
 
-Obtain a  hearing test to determine level of hearing loss 
+Obtain a  hearing test to determine the level of hearing loss 
 
 Request hearing aids 
 
-Assistive technology to improve hearing """,
-        "user_prompt": "Diminique's primary challenge is: {primary_challenge}. I believe his diagnosis are: {diagnosis}",
+Request seating in the front of the room. 
+
+Assistive technology to improve hearing, such as a classroom FM system or personal FM system such as the Williams Sound PFM Pro Personal FM Listening System """,
+        "user_prompt": "Dominique's primary challenge is: {primary_challenge}. I believe his diagnosis are: {diagnosis}",
         "ai_response": True,
         
         "scored_phase": True,
         "rubric": """
         1. Primary challenge:
-        2 points - The user has provided a primary challenge that is consistent with Diminique's presentation and that they've extracted from the chat with Dominique.
+        2 points - The user has provided a primary challenge that is consistent with Dominique's presentation and that they've extracted from the chat with Dominique.
         0 points - The user has provided a primary challenge that is not consistent with Dominique's presentation or they did not extract it from the chat with Dominique..
         2. Differential Diagnosis:
         2 points - The user has provided assistive technology recommendations that are consistent with Dominique's presentation and that they've extracted from the chat with Dominique.
