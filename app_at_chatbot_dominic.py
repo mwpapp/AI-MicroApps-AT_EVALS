@@ -41,7 +41,7 @@ PHASES = {
                 "type": "image",
                 "decorative": False,
                 "width": 300,
-                "image": "app_images/Dominic.webp",
+                "image": "app_images/dominic.webp",
                 "caption": "Your student Dominque is a 16-year-old young man with Retinitis Pigmentosa.",
                 "alt": "A portrait of Dominic, a 16-year-old young African-American man wearing dark glasses and a school uniform in a classroom."
             },
