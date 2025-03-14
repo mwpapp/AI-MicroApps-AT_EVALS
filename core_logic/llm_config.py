@@ -11,7 +11,7 @@ LLM_CONFIG = {
         "supports_image": False,
         "price_input_token_1M": 0.15,
         "price_output_token_1M": 0.60
-    }
+    },
     "gpt-4-turbo": {
         "family": "openai",
         "model": "gpt-4-turbo",
