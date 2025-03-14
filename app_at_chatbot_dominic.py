@@ -3,7 +3,7 @@ APP_IMAGE = "ai_chatbot_vision.webp"
 PUBLISHED = True
 
 ## Set the API key and model name
-MODEL="gpt-4o-mini"
+MODEL="gpt-4o"
 ##client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
 
 APP_TITLE = "Dominic's Assistive Technology Evaluation"
