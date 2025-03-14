@@ -12,4 +12,52 @@ LLM_CONFIG = {
         "price_input_token_1M": 0.15,
         "price_output_token_1M": 0.60
     }
+    "gpt-4-turbo": {
+        "family": "openai",
+        "model": "gpt-4-turbo",
+        "max_tokens": 1000,
+        "temperature": 1.0,
+        "top_p": 1.0,
+        "frequency_penalty": 0,
+        "presence_penalty": 0,
+        "supports_image": True,
+        "price_input_token_1M": 10,
+        "price_output_token_1M": 30
+    },
+    "rag-with-gpt-4o": {
+        "family": "rag",
+        "model": "gpt-4-turbo",
+        "max_tokens": 1000,
+        "temperature": 1.0,
+        "top_p": 1.0,
+        "frequency_penalty": 0,
+        "presence_penalty": 0,
+        "supports_image": True,
+        "price_input_token_1M": 10,
+        "price_output_token_1M": 30
+    },
+    "gpt-4o": {
+        "family": "openai",
+        "model": "gpt-4o",
+        "max_tokens": 2000,
+        "temperature": 1.0,
+        "top_p": 1.0,
+        "frequency_penalty": 0,
+        "presence_penalty": 0,
+        "supports_image": True,
+        "price_input_token_1M": 2.5,
+        "price_output_token_1M": 10
+    },
+    "gemini-1.5-flash": {
+        "family": "gemini",
+        "model": "gemini-1.5-flash",
+        "max_tokens": 1000,
+        "temperature": 1.0,
+        "top_p": 0.95,
+        "frequency_penalty": 0,
+        "presence_penalty": 0,
+        "supports_image": False,
+        "price_input_token_1M": 0.15,
+        "price_output_token_1M": 0.60
+    },
 }
