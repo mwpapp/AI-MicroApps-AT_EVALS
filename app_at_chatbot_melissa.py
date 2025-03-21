@@ -40,7 +40,7 @@ PHASES = {
                 "type": "image",
                 "decorative": True,
                 "width": 300,
-                "image": "app_images/melissaateval.webp",
+                "image": "app_images/melissa.webp",
                 "caption": "Your new student Melissa is a 12-year old girl with difficulty reading and understanding oral instructions.",
             },
             "chat": {
